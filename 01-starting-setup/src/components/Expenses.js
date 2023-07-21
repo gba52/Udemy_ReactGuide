@@ -4,7 +4,7 @@ import './Expenses.css';
 function Expenses({expenses}) {
 
     return (
-        <div>
+        <div className="expenses">
             {expenses.map((item) => {
                 return (<ExpenseItem title={item.title} date={item.date} amount={item.amount}></ExpenseItem>);
             })}
